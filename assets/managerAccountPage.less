@@ -1,0 +1,55 @@
+.managerAccount {
+  position: absolute;
+  top: 80px;
+  left: 15%;
+  height: 100%;
+  width: 85%;
+  padding-top: 30px;
+  background-color: whitesmoke;
+
+  .title {
+    padding-left: 15px;
+  }
+
+  .addAccount {
+    margin-left: 15px;
+    background-color: lightgrey;
+    padding: 12px 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0px;
+  }
+
+  .list {
+    margin-top: 17px;
+    width: 100%;
+    border: 1px grey;
+
+    tr {
+      &:first-child{
+        th {
+          background-color: lightgrey;
+          &:nth-child(1) {
+            width: 15%;
+          }
+          &:nth-child(2) {
+            width: 20%;
+          }
+          &:nth-child(3) {
+            width: 25%;
+          }
+          &:nth-child(4) {
+            width: 20%;
+          }
+          &:nth-child(5) {
+            width: 20%;
+          }
+        }
+      }
+    }
+    th {
+      height: 45px;
+      background-color: white;
+    }
+  }
+}

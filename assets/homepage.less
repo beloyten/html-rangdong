@@ -1,0 +1,43 @@
+.manager3d {
+  position: absolute;
+  top: 80px;
+  left: 15%;
+  width: 85%;
+  height: 100%;
+  padding-top: 30px;
+  background-color: whitesmoke;
+  
+  .title {
+    margin-left: 15px;
+  }
+
+  .table {
+    height: 250px;
+    background-color: darkgray;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    .sub-title {
+      border-bottom: 1px solid white;
+      height: 30px;
+      padding-left: 20px;
+    }
+
+    .children {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      
+      a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        &:hover {
+          cursor: pointer;
+          color: aqua;
+        }
+      }
+    }
+  }
+}

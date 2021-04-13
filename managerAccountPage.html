@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet/less" type="text/css" href="assets/style.less" />
-  <title>Trang chủ</title>
+  <title>Trang quản trị viên</title>
 </head>
 <body>
   <!-- Header -->
@@ -43,22 +43,28 @@
   </div>
   <!-- End Sidebar -->
 
-  <!-- Start 3D-->
-  <div class="manager3d">
-    <a class="title">Trang Chủ</a>
-    <div class="table">
-      <div class="sub-title">
-        <a>Chào mừng đến với trang quản lý sản phẩm 3D của Rạng Đông</a>
-      </div>
-      <div class="children">
-        <a>Lối tắt</a>
-        <a>Tạo tài khoản</a>
-        <a>Đăng sản phẩm mới</a>
-        <a>Quản lý nhân viên</a>
-      </div>
+  <!-- Manager Account -->
+  <div class="managerAccount">
+    <div>
+      <a class="title">Trang chủ / Quản lý viên</a>
     </div>
+    <div>
+      <button class="addAccount">Tạo mới tài khoản</button>
+    </div>
+    <div>
+      <a class="title">Danh sách</a>
+    </div>
+    <table class="list">
+      <tr>
+        <th>Ảnh đại diện</th>
+        <th>Họ và Tên</th>
+        <th>Email</th>
+        <th>Loại tài khoản</th>
+        <th>Ngày tạo tài khoản</th>
+      </tr>
+    </table>
   </div>
-  <!-- End 3D-->
+  <!--End Manager Account -->
   <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
 </body>
 </html>
