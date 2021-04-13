@@ -1,0 +1,86 @@
+html,body {
+  height: 100%;
+  margin: 0;
+}
+.header {
+  padding-right: 50px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  .account {
+    display: flex;
+    .avatar {
+      margin-right: 20px;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 3px;
+    }
+    .email {
+      font-size: 13px;
+    }
+  }
+}
+.sidebar {
+  height: 100%;
+  width: 15%;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .logo-image {
+    margin-bottom: 120px;
+  }
+  .menu-bar {
+    .father {
+      margin-left: 10px;
+      position: relative;
+      &:nth-child(1) {
+        &::before {
+          content: url("../images/product.svg");
+          position: absolute;
+          left: -30px;
+          top: -3px;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          content: url("../images/account-2.svg");
+          position: absolute;
+          left: -30px;
+          top: -3px;
+        }
+      }
+      &:nth-child(5) {
+        &::before {
+          content: url("../images/setting.svg");
+          position: absolute;
+          left: -30px;
+          top: -3px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        color: red;
+      }
+    }
+    .children {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 15px;
+      a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        &:hover {
+          cursor: pointer;
+          color: aqua;
+        }
+      }
+    }
+  }
+}
