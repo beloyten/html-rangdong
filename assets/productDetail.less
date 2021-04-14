@@ -1,0 +1,136 @@
+.productDetail {
+  position: absolute;
+  top: 80px;
+  left: 15%;
+  height: 100%;
+  width: 85%;
+  padding-top: 25px;
+  background-color: whitesmoke;
+
+  .title {
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .below {
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    .detailInfo {
+      height: 100%;
+      width: 70%;
+      background-color: white;
+      border-radius: 5px;
+
+      .sub-titleDetail {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid lightgrey;
+        .title1{
+          position: relative;
+          left: 60px;
+          
+          &::before {
+            content: url("../images/arrow.svg");
+            position: absolute;
+            left: -40px;
+          }
+        }
+      }
+
+      .name{
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        .textarea {
+          padding-right: 10px;
+          background-color: lightgray;
+          border: 0px;
+          border-radius: 5px;
+        }
+      }
+
+      .info{
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        height: 35%;
+        display: flex;
+        justify-content: space-between;
+        .textarea {
+          padding-right: 10px;
+          background-color: lightgray;
+          border: 0px;
+          border-radius: 5px;
+        }
+      }
+
+      .redirect {
+        position: absolute;
+        margin-left: 240px;
+        width: 30%;
+        text-align: center;
+        background-color: lightgray;
+        border-radius: 5px;
+      }
+    }
+
+    .action {
+      height: 13%;
+      width: 28%;
+      background-color: white;
+      border-radius: 5px;
+      margin-right: 10px;
+
+      .titleAction {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid lightgrey;
+        .title2 {
+          padding-left: 7px;
+        }
+      }
+
+      .buttonAction {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .editProduct {
+          margin-top: 3px;
+          background-color: white;
+          border: 0px;
+          border-radius: 5px;
+          padding: 9px 15px;
+          &:hover {
+            background-color: red;
+            cursor: pointer;
+            box-shadow: 0 5px 5px 0 rgba(233, 95, 95, 0.24), 0 5px 5px 0 rgba(230, 47, 47, 0.19);
+          }
+        }
+
+        .deleteProduct {
+          margin-top: 3px;
+          background-color: grey;
+          border: 0px;
+          border-radius: 5px;
+          font-size: 16px;
+          padding: 9px 25px;
+          color: azure;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

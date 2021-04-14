@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet/less" type="text/css" href="assets/style.less" />
-  <title>Trang quản trị viên</title>
+  <title>Document</title>
 </head>
 <body>
   <!-- Header -->
@@ -43,28 +43,41 @@
   </div>
   <!-- End Sidebar -->
 
-  <!-- Manager Account -->
-  <div class="managerAccount">
+  <!-- Product Detail -->
+  <div class="productDetail">
     <div class="title">
-      <a>Trang chủ / Quản lý viên</a>
+      <a>Trang chủ / Quản lý sản phẩm/A60.BLE.RGBCW/9W</a>
     </div>
-    <div>
-      <button class="addAccount">Tạo mới tài khoản</button>
+    <div class="below">
+      <div class="detailInfo">
+        <div class="sub-titleDetail">
+          <a class="title1">Chi tiết sản phẩm</a>
+        </div>
+        <div class="name">
+          <a class="titleElement">Tên sản phẩm: </a>
+          <textarea class="textarea" id="productName" name="productName" rows="3" cols="80"></textarea>
+        </div>
+        <div class="info">
+          <a class="titleElement">Thông số kỹ thuật: </a>
+          <textarea class="textarea" id="productInfo" name="productInfo" rows="8" cols="80"></textarea>
+        </div>
+        <div class="redirect">
+          <a>nhấp vào đây để sang trang chỉnh sửa </a>
+        </div>
+      </div>
+      <div class="action">
+        <div class="titleAction">
+          <a class="title2">Hành động</a>
+        </div>
+        <div class="buttonAction">
+          <button class="editProduct">Xóa</button>
+          <button class="deleteProduct">Chỉnh sửa</button>
+        </div>
+      </div>
     </div>
-    <div class="title">
-      <a>Danh sách</a>
-    </div>
-    <table class="list">
-      <tr>
-        <th>Ảnh đại diện</th>
-        <th>Họ và Tên</th>
-        <th>Email</th>
-        <th>Loại tài khoản</th>
-        <th>Ngày tạo tài khoản</th>
-      </tr>
-    </table>
   </div>
-  <!--End Manager Account -->
-  <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+  <!-- End Detail -->
+
+<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
 </body>
 </html>
