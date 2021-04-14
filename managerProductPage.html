@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet/less" type="text/css" href="assets/style.less" />
+  <title>Document</title>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <img src="./images/navbar.svg"/>
+    <div class="account">
+      <div class="avatar">
+        <img src="./images/avatar.svg"/>
+      </div>
+      <div class="account-info">
+        <div class="name">Admin</div>
+        <div class="email">Admin@gmail.com</div>
+      </div>
+    </div>
+  </div>
+  <!-- End header -->
+  <!-- Start Sidebar -->
+  <div class="sidebar">
+    <div class="logo-image">
+      <img src="./images/rangdong.svg"/>
+    </div>
+    <div class="menu-bar">
+      <a class="father">Quản lý sản phẩm</a>
+      <div class="children">
+        <a>Đăng sản phẩm</a>
+        <a>Danh sách sản phẩm</a>
+      </div>
+      <a class="father">Tài khoản</a>
+      <div class="children">
+        <a>Quản trị viên</a>
+        <a>Nhân viên</a>
+      </div>
+      <a class="father">Settings</a>
+    </div>
+  </div>
+  <!-- End Sidebar -->
+
+  <!-- Manager Product -->
+  <div class="manager">
+    <div class="title">
+      <a>Trang chủ / Quản lý sản phẩm</a>
+    </div>
+    <div  class="title">
+      <a>Danh sách</a>
+    </div>
+    <div class="button">
+      <div class="radio">
+        <input type="radio" id="all" value="">
+        <label class="container" for="all">Tất cả</label>
+        <input type="radio" id="industry" value="">
+        <label class="container" for="industry">Loại đèn công nghiệp</label>
+        <input type="radio" id="family" value="">
+        <label class="container" for="family">Loại đèn gia đình</label>
+      </div>
+      <button class="addProduct">Đăng sản phẩm mới</button>
+    </div>
+    <table class="list">
+      <tr>
+        <th>Model</th>
+        <th>Trạng thái</th>
+        <th>Chỉnh sửa/cập nhật</th>
+        <th>Link public</th>
+        <th>Ngày đăng</th>
+        <th>Người đăng</th>
+      </tr>
+    </table>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+</body>
+</html>
