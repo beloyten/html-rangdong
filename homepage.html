@@ -10,7 +10,7 @@
 <body>
   <!-- Header -->
   <div class="header">
-    <img src="./images/navbar.svg"/>
+    <img class="nav-bar" src="./images/navbar.svg" onclick="showSidebar(true)" id="navbar"/>
     <div class="account">
       <div class="avatar">
         <img src="./images/avatar.svg"/>
@@ -23,7 +23,7 @@
   </div>
   <!-- End header -->
   <!-- Start Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar" id="sidebar">
     <div class="logo-image">
       <img src="./images/rangdong.svg"/>
     </div>
@@ -44,7 +44,7 @@
   <!-- End Sidebar -->
 
   <!-- Start 3D-->
-  <div class="manager3d">
+  <div class="manager3d" id="manager3d">
     <a class="title">Trang Chủ</a>
     <div class="table">
       <div class="sub-title">
@@ -60,5 +60,15 @@
   </div>
   <!-- End 3D-->
   <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+  <script>
+    function showSidebar(value) {
+      var navbar = document.getElementById('navbar')
+      var sidebar = document.getElementById('sidebar')
+      var manager3d = document.getElementById('manager3d')
+      navbar.classList.toggle("margin-15")
+      sidebar.classList.toggle("display")
+      manager3d.classList.toggle("width-85")
+    }
+  </script>
 </body>
 </html>

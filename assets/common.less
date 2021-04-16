@@ -23,16 +23,28 @@ html,body {
       font-size: 13px;
     }
   }
+  .nav-bar {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .margin-15 {
+    margin-left: 15%;
+  }
 }
 .sidebar {
   height: 100%;
   width: 15%;
   border-right: 1px solid black;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;    
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: none;
   .logo-image {
     margin-bottom: 70px;
+    margin-top: 20px;
   }
   .menu-bar {
     .father {
@@ -83,4 +95,7 @@ html,body {
       }
     }
   }
+}
+.display {
+  display: flex;
 }
