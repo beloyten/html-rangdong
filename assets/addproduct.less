@@ -1,0 +1,291 @@
+.addProduct {
+  position: absolute;
+  top: 80px;
+  left: 15%;
+  width: 85%;
+  padding-top: 25px;
+  background-color: whitesmoke;
+
+  .title {
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .below {
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    .left {
+      height: 100%;
+      width: 70%;
+      background-color: white;
+      border-radius: 5px;
+
+      .sub-titleDetail {
+        padding-bottom: 5px;
+        border-bottom: 1px solid lightgrey;
+        .title1{
+          position: relative;
+          left: 60px;
+          &::before {
+            content: url("../images/arrow.svg");
+            position: absolute;
+            left: -40px;
+          }
+        }
+      }
+
+      .add{
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 10%;
+        display: flex;
+        .titleElement {
+          width: 140px;
+        }
+        .uploadProduct {
+          margin-left: 20px;
+          margin-top: 10px;
+          background-color: grey;
+          border: 0px;
+          border-radius: 5px;
+          height: 30px;
+          color: azure;
+          font-weight: bold;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .name{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        
+        .titleElement{
+          margin-top: 5px;
+          width: 140px;
+        }
+        .textarea {
+          margin-top: 10px;
+          margin-left: 20px;
+          padding-right: 10px;
+          background-color: lightgray;
+          border: 0px;
+          border-radius: 5px;
+        }
+      }
+
+      .info{
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 35%;
+        display: flex;
+        justify-content: space-between;
+
+        .titleElement{
+          margin-top: 0px;
+          width: 140px;
+        }
+        .textarea {
+          margin-left: 20px;
+          padding-right: 10px;
+          background-color: lightgray;
+          border: 0px;
+          border-radius: 5px;
+        }
+      }
+
+      .editPoint {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        height: 10%;
+        display: flex;
+        
+        .titleElement{
+          margin-top: 0px;
+          width: 140px;
+        }
+        .editProduct {
+          margin-left: 20px;
+          background-color: grey;
+          border: 0px;
+          border-radius: 5px;
+          height: 30px;
+          color: azure;
+          font-weight: bold;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .editLayer {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 10%;
+        display: flex;
+
+        .titleElement{
+          margin-top: 0px;
+          width: 140px;
+        }
+        .button {
+          margin-left: 20px;
+          display: flex;
+
+          .horizontal {
+            padding-right: 30px;
+          }
+          .vertical {
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 28%;
+      height: 100%;
+      padding-left: -5px;
+      .publishBlock {
+        height: 230px;
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+        .titlePublish {
+          padding-top: 5px;
+          border-bottom: 1px solid lightgrey;
+          .title2 {
+            padding-left: 7px;
+          }
+        }
+  
+        .content {
+          padding-left: 10px;
+          padding-right: 10px;
+          .person {
+            height: 30px;
+            padding-top: 7px;
+            padding-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            .images{
+              height: 25px;
+              width: 25px;
+              padding-right: 5px;
+            }
+            .selection {
+              height: 80%;
+              width: 90%;
+            }
+          }
+          .status {
+            height: 30px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            .images{
+              height: 25px;
+              width: 25px;
+              padding-right: 5px;
+            }
+            .selection {
+              height: 80%;
+              width: 90%;
+            }
+          }
+          .date {
+            height: 30px;
+            padding-top: 4px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgrey;
+            .images{
+              height: 24px;
+              width: 24px;
+              padding-right: 5px;
+            }
+            .input {
+              height: 70%;
+              width: 90%;
+            }
+          }
+          
+          .actionButton {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            .trash {
+              padding-left: 10px;
+              &:hover{
+                font-weight: bold;
+              }
+              img{
+                height: 20px;
+                width: 20px;
+                padding-right: 3px;
+              }
+              a{
+                color: red;
+                padding-top: 10px;
+                margin-top: 10px;
+                text-decoration: none;
+              }
+            }
+            .publish {
+              background-color: lightskyblue;
+              border: 0px;
+              border-radius: 5px;
+              height: 30px;
+              color: azure;
+              padding-right: 10px;
+              margin-top: -5px;
+              &:hover {
+                cursor: pointer;
+              }
+              img {
+                height: 12px;
+                width: 12px;
+                padding-left: 5px;
+                padding-right: 4px;
+              }
+            }
+          }
+        }
+      }
+  
+      .thumbnail {
+        height: 300px;
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        .titleThumbnail{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid lightgrey;
+          .title2 {
+            padding-left: 7px;
+          }
+        }
+        .images {
+          height: 90%;
+          width: 90%;
+          padding: 5%;
+        }
+      }
+    }  
+  }
+}

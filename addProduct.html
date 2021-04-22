@@ -4,9 +4,132 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet/less" type="text/css" href="assets/style.less" />
   <title>Add Product</title>
 </head>
 <body>
-  
+  <!-- Header -->
+  <div class="header">
+    <img src="./images/navbar.svg"/>
+    <div class="account">
+      <div class="avatar">
+        <img src="./images/avatar.svg"/>
+      </div>
+      <div class="account-info">
+        <div class="name">Admin</div>
+        <div class="email">Admin@gmail.com</div>
+      </div>
+    </div>
+  </div>
+  <!-- End header -->
+  <!-- Start Sidebar -->
+  <div class="sidebar">
+    <div class="logo-image">
+      <img src="./images/rangdong.svg"/>
+    </div>
+    <div class="menu-bar">
+      <a class="father">Quản lý sản phẩm</a>
+      <div class="children">
+        <a>Đăng sản phẩm</a>
+        <a>Danh sách sản phẩm</a>
+      </div>
+      <a class="father">Tài khoản</a>
+      <div class="children">
+        <a>Quản trị viên</a>
+        <a>Nhân viên</a>
+      </div>
+      <a class="father">Settings</a>
+    </div>
+  </div>
+  <!-- End Sidebar -->
+
+  <!-- Add Product -->
+  <div class="addProduct">
+    <div class="title">
+      <a>Trang chủ / Danh sách sản phẩm / Thêm mới</a>
+    </div>
+    <div class="below">
+      <div class="left">
+        <div class="sub-titleDetail">
+          <p class="title1">Thêm sản phẩm mới</p>
+        </div>
+        <div class="add">
+          <p class="titleElement">Upload sản phẩm: </p>
+          <button class="uploadProduct">Ấn vào đây</button>
+        </div>
+        <div class="name">
+          <p class="titleElement">Tên sản phẩm: </p>
+          <textarea class="textarea" id="productName" name="productName" rows="2" cols="80"></textarea>
+        </div>
+        <div class="info">
+          <p class="titleElement">Thông số kỹ thuật: </p>
+          <textarea class="textarea" id="productInfo" name="productInfo" rows="9" cols="80"></textarea>
+        </div>
+        <div class="editPoint">
+          <p class="titleElement">Gắn điểm checkpoint trên layer: </p>
+          <button class="editProduct">Chỉnh sửa</button>
+        </div>
+        <div class="editLayer">
+          <p class="titleElement">Tách layer dạng: </p>
+          <div class="button">
+            <div class="horizontal">
+              <input type="radio">
+              <label for="horizontal">Ngang</label>
+            </div>
+            <div class="vertical">
+              <input type="radio">
+              <label for="vertical">Dọc</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="publishBlock">
+          <div class="titlePublish">
+            <p class="title2">Publish</p>
+          </div>
+          <div class="content">
+            <div class="person">
+              <img class="images" src="images/person.png" alt="">
+              <select class="selection" name="person" id="person">
+                <option value="1">bpass</option>
+                <option value="2">bpass2</option>
+              </select>
+            </div>
+            <div class="status">
+              <img class="images" src="images/pin.png" alt="">
+              <select class="selection" name="person" id="person">
+                <option value="1">Publish</option>
+                <option value="2">Draft</option>
+                <option value="3">Pending</option>
+              </select>
+            </div>
+            <div class="date">
+              <img class="images" src="images/calendar.png" alt="">
+              <input class="input" type="date" id="" name="">
+            </div>
+            <div class="actionButton">
+              <div class="trash">
+                <img src="images/delete-24.png"/>
+                <a href="">Move to trash</a>
+              </div>
+              <button class="publish"><img src="images/publish.svg" />Publish</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="titleThumbnail">
+            <p class="title2">Thumbnail</p>
+          </div>
+          <div>
+            <input class="images" type="image" src="images/c80515ff_z.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Add -->
+
+<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
 </body>
 </html>
