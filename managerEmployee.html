@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet/less" type="text/css" href="assets/style.less" />
-  <title>Trang quản trị viên</title>
+  <title>Trang quản trị nhân viên</title>
 </head>
 <body>
   <!-- Header -->
   <div class="header">
-    <img src="./images/navbar.svg"/>
+    <img class="nav-bar" src="./images/navbar.svg" onclick="showSidebar(true)" id="navbar"/>
     <div class="account">
       <div class="avatar">
         <img src="./images/avatar.svg"/>
@@ -43,13 +43,24 @@
   </div>
   <!-- End Sidebar -->
 
-  <!-- Manager Account -->
-  <div class="managerAccount">
+  <!-- Manager Employee -->
+  <div class="managerEmployee">
     <div class="title">
-      <a>Trang chủ / Quản lý viên</a>
+      <a>Trang chủ / Nhân viên</a>
     </div>
     <div>
-      <button class="addAccount">Tạo mới tài khoản</button>
+      <button class="addEmployee">Thêm nhân viên</button>
+    </div>
+    <div class="button">
+      <div>
+        <input type="radio">
+        <label for="All">Tất cả</label>
+      </div>
+      <div class="search">      
+        <input class="search1" type="text" placeholder="Tìm kiếm...">
+        <button type="submit"><img class="search2" src="images/search.png"></button>
+      </div>
+
     </div>
     <div class="title">
       <a>Danh sách</a>
@@ -57,79 +68,94 @@
     <table class="list">
       <tr>
         <th><input type="checkbox"></th>
-        <th>Ảnh đại diện</th>
         <th>Số điện thoại</th>
-        <th>Username</th>
+        <th>Họ và tên</th>
         <th>Email</th>
-        <th>Loại tài khoản</th>
+        <th>ID</th>
+        <th>Tags</th>
+        <th>Hạng</th>
         <th>Trạng thái</th>
+        <th>Ngày tạo tài khoản</th>
       </tr>
       <tr>
         <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
         <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
+        <td><p>Phạm Trần Nữ Anh Thư</p></td>
         <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
+        <td><p>43628</p></td>
+        <td><p>All</p></td>
+        <td><p>Đồng</p></td>
         <td><p class="active">Đã kích hoạt</p></td>
+        <td><p>04/12/1998 14:32:00</p></td>
       </tr>
       <tr>
         <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
         <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
+        <td><p>Phạm Trần Nữ Anh Thư</p></td>
         <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
+        <td><p>43628</p></td>
+        <td><p>All</p></td>
+        <td><p>Đồng</p></td>
         <td><p class="active">Đã kích hoạt</p></td>
+        <td><p>04/12/1998 14:32:00</p></td>
       </tr>
       <tr>
         <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
         <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
+        <td><p>Phạm Trần Nữ Anh Thư</p></td>
         <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
+        <td><p>43628</p></td>
+        <td><p>All</p></td>
+        <td><p>Đồng</p></td>
         <td><p class="active">Đã kích hoạt</p></td>
+        <td><p>04/12/1998 14:32:00</p></td>
       </tr>
       <tr>
         <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
         <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
+        <td><p>Phạm Trần Nữ Anh Thư</p></td>
         <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
+        <td><p>43628</p></td>
+        <td><p>All</p></td>
+        <td><p>Đồng</p></td>
         <td><p class="active">Đã kích hoạt</p></td>
+        <td><p>04/12/1998 14:32:00</p></td>
       </tr>
       <tr>
         <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
         <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
+        <td><p>Phạm Trần Nữ Anh Thư</p></td>
         <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
+        <td><p>43628</p></td>
+        <td><p>All</p></td>
+        <td><p>Đồng</p></td>
         <td><p class="active">Đã kích hoạt</p></td>
+        <td><p>04/12/1998 14:32:00</p></td>
       </tr>
       <tr>
         <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
         <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
+        <td><p>Phạm Trần Nữ Anh Thư</p></td>
         <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
+        <td><p>43628</p></td>
+        <td><p>All</p></td>
+        <td><p>Đồng</p></td>
         <td><p class="active">Đã kích hoạt</p></td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td><img src="images/avatar.svg"></td>
-        <td><p>+87765433662</p></td>
-        <td><p>username</p></td>
-        <td><p>rangdong@gmail.com</p></td>
-        <td><p>Quản trị viên</p></td>
-        <td><p class="active">Đã kích hoạt</p></td>
+        <td><p>04/12/1998 14:32:00</p></td>
       </tr>
     </table>
   </div>
   <!--End Manager Account -->
   <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+  <script>
+    function showSidebar(value) {
+      var navbar = document.getElementById('navbar')
+      var sidebar = document.getElementById('sidebar')
+      var manager3d = document.getElementById('manager3d')
+      navbar.classList.toggle("margin-15")
+      sidebar.classList.toggle("display")
+      manager3d.classList.toggle("width-85")
+    }
+  </script>
 </body>
 </html>
